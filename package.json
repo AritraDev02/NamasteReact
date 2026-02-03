@@ -1,0 +1,26 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "hii this is namaste react by aritra",
+  "keywords": [
+    "react"
+  ],
+  "homepage": "https://github.com/AritraDev02/NamasteReact#readme",
+  "bugs": {
+    "url": "https://github.com/AritraDev02/NamasteReact/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AritraDev02/NamasteReact.git"
+  },
+  "license": "ISC",
+  "author": "Aritra Chakraborty",
+  "type": "commonjs",
+  "main": "reactprac.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
