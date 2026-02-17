@@ -9,24 +9,31 @@
 //The Second phase prac [create a dom tree]
 
 
-var parent=React.createElement("div",{id:"parent"},
-        [React.createElement("div",{id:"child1"},
-                [
-                        React.createElement("h1",{},"Hii i'm the h1 from child:1")
-                ]
-                //2e12e
-        ),
+import React from"react";
+import ReactDOM from"react-dom/client";
+// var parent=React.createElement("div",{id:"parent",key:"parent"},
+//         [React.createElement("div",{id:"child1",key:"child1"},
+//                 [
+//                         React.createElement("h1",{key:"h1child1"},"Hii i'm the h1 from child:1")
+//                 ]
+//                 //2e12e
+//         ),
 
-        React.createElement("div",{id:"child2"},
-                [
-                        React.createElement("h1",{},"Hii i'm the h1 from child:2"),
-                        React.createElement("h2",{},"Hii i'm the h2 from child:2")
-                ]
-        )
+//         React.createElement("div",{id:"child2",key:"child2"},
+//                 [
+//                         React.createElement("h1",{key:"h1child2"},"Hii i'm the h1 from child:2"),
+//                         React.createElement("h2",{key:"h2child2"},"Hii i'm the h2 from child:2")
+//                 ]
+//         )
         
-]//trhrh
-);
+// ]
+// );
 
+
+// var root=ReactDOM.createRoot(document.getElementById("container"));
+// root.render(parent);
+
+var jsxheading=<h1>Hello World From JSX!,its a JAX Heading</h1>
 
 var root=ReactDOM.createRoot(document.getElementById("container"));
-root.render(parent);
+root.render(jsxheading);

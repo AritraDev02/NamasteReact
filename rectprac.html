@@ -7,18 +7,18 @@
 
     <link rel="stylesheet" href="./reactprac.css">
 
+    <!-- this not the recomaded wa you shuld import it from node modules -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js" defer></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" defer></script> -->
 
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js" defer></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" defer></script>
-
-    <script src="./scriptcode.js" defer></script>
+    <script type="module" src="./scriptcode.js" defer></script>
 </head>
 <body>
-    <div id="container">
+    <div id="container" key="container">
         
     </div>
     <!-- <script>
-        var heading=document.createElement("h1");
+        var heading=document.createElement("h1");                                                
         heading.innerHTML="HelloWorld From JavaScript!";
 
 
