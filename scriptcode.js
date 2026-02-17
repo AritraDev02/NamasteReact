@@ -33,7 +33,19 @@ import ReactDOM from"react-dom/client";
 // var root=ReactDOM.createRoot(document.getElementById("container"));
 // root.render(parent);
 
+var parent=React.createElement("h1",{id:"heading"},"this hello world from react create element");
+
 var jsxheading=<h1>Hello World From JSX!,its a JAX Heading</h1>
 
+console.log(jsxheading);
+
+console.log(parent);
+
 var root=ReactDOM.createRoot(document.getElementById("container"));
-root.render(jsxheading);
+//root.render(jsxheading);
+//root.render(parent);
+
+
+var paragraph=<p>gydfqwydyufdufuqfdufdyfdfudfuqfdufdyufdyufduyqfduqdf</p>
+
+root.render(paragraph);
