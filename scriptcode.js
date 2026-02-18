@@ -35,17 +35,18 @@ import ReactDOM from"react-dom/client";
 
 var parent=React.createElement("h1",{id:"heading"},"this hello world from react create element");
 
-var jsxheading=<h1>Hello World From JSX!,its a JAX Heading</h1>
+//var jsxheading=<h1 id="heading" className="chkhead" tabIndex="5">Hello World From JSX!,its a JAX Heading</h1>
 
-console.log(jsxheading);
+//var img=React.createElement("img",{src:"https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=jlYes8ZfnCmD0lLn-vKvzQoKXrWaEcVypHnB5MuO-g8=",alt:"car img"})
+var img=<img src="https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=jlYes8ZfnCmD0lLn-vKvzQoKXrWaEcVypHnB5MuO-g8=" alt="Code Image"></img>
 
-console.log(parent);
+var link=(<a id="google-link" href="https://www.google.com" 
+    target="_blank">Click Here</a>);
 
 var root=ReactDOM.createRoot(document.getElementById("container"));
 //root.render(jsxheading);
-//root.render(parent);
+root.render(link);
 
 
-var paragraph=<p>gydfqwydyufdufuqfdufdyfdfudfuqfdufdyufdyufduyqfduqdf</p>
 
-root.render(paragraph);
+
