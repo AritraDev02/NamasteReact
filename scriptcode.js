@@ -38,14 +38,50 @@ var parent=React.createElement("h1",{id:"heading"},"this hello world from react 
 //var jsxheading=<h1 id="heading" className="chkhead" tabIndex="5">Hello World From JSX!,its a JAX Heading</h1>
 
 //var img=React.createElement("img",{src:"https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=jlYes8ZfnCmD0lLn-vKvzQoKXrWaEcVypHnB5MuO-g8=",alt:"car img"})
-var img=<img src="https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=jlYes8ZfnCmD0lLn-vKvzQoKXrWaEcVypHnB5MuO-g8=" alt="Code Image"></img>
 
-var link=(<a id="google-link" href="https://www.google.com" 
-    target="_blank">Click Here</a>);
+//components
+//there is two types of components in react
+//1.Functional component
+//2.Class based component
+
+var Fcomp=()=>{
+    return <h1>this heading from fcomp1</h1>
+}
+
+
+// var Fcomp2=()=>(
+//     <div id="nestedcont">
+//         <Fcomp/>
+//         <h1>This is the nested heading from Fcomp2</h1>
+//     </div>
+// );
+
+
+
+var Fcomp2=function(){
+    return(
+        <div id="cont">
+           
+            <h2>This is heading from the normal function</h2>
+
+        </div>
+    )
+}
+var elem=(
+    <div>
+        <h1>This is the normal jsx element</h1>
+        <Fcomp2/>
+        <Fcomp2></Fcomp2>
+        {Fcomp2()} 
+        {2000+6000}
+    </div>
+);
+
 
 var root=ReactDOM.createRoot(document.getElementById("container"));
+
 //root.render(jsxheading);
-root.render(link);
+root.render(elem);
 
 
 
