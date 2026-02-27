@@ -1,3 +1,56 @@
-h1{
-    color:blue
+.headercomp{
+    border: black solid 1px;
+} 
+.header-items{
+    display: flex;
+    justify-content: space-between;
+}
+.brandlogo{
+    
+    width: 150px;
+}
+.nav-items{
+    list-style-type: none;
+    display: flex;
+    
+}
+.nav-items>li{
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.restraunt-block{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-top: 5px;
+    
+}
+.restaurant{
+    
+    
+    width: 223;
+    padding: auto;
+    cursor: pointer;
+    background-color: #F5F5F5;
+    
+
+}
+.restaurant:hover{
+    border:black solid 1px;
+}
+.restaurant>div>img{
+    width: 100%;
+   max-height: 150px;
+}
+.restaurant>div>span{
+    margin-right: 20px;
+}
+.restaurant>div>p{
+    font-size:small;
+}
+.restaurant>div{
+    padding: 5px;
 }
