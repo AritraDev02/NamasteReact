@@ -54,3 +54,10 @@
 .restaurant>div{
     padding: 5px;
 }
+.Filter-btn{
+    cursor: pointer;
+    margin-top:10px;
+    background-color: orange;
+    color: white;
+    border-radius: 25px;
+}
